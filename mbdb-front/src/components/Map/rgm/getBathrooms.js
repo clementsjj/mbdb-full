@@ -5,6 +5,7 @@ export const getBathrooms = () => {
       .get(`http://localhost:3000/bathrooms/getallbathrooms`)
       .then(data => {
         console.log('GET request sent. Return: ', data);
+        console.log('Clean Data: ', data.data.payload);
         resolve({ bathrooms: data });
       })
       .catch(err => {

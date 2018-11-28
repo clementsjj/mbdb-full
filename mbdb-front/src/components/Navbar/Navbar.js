@@ -8,6 +8,7 @@ import {
   Container
 } from 'semantic-ui-react';
 import FormContainer from './FormContainer';
+import About from './About';
 import '../../App.css';
 
 export default class Navbar extends Component {
@@ -46,6 +47,23 @@ export default class Navbar extends Component {
           <Header icon="chess rock" content="Enter Bathroom Information" />
           <Modal.Content>
             <FormContainer />
+          </Modal.Content>
+          <Modal.Actions />
+        </Modal>
+        <Modal
+          trigger={
+            <Button basic color="green" style={{ marginLeft: '5%' }}>
+              What is this?
+            </Button>
+          }
+          basic
+          centered
+          closeIcon
+          size="large"
+        >
+          {/* <Header icon="chess rock" content="What is MBDB?" /> */}
+          <Modal.Content>
+            <About />
           </Modal.Content>
           <Modal.Actions />
         </Modal>
