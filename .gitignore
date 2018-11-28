@@ -1,0 +1,10 @@
+/mbdb-front/notes.md
+/mbdb-front/node_modules
+/mbdb-front/lessons-learned.md
+/mbdb-front/.git
+/mbdb-front/.gitignore
+
+/mbdb-back/.env
+/mbdb-back/node_modules
+
+.DS_Store
